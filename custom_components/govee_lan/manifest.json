@@ -1,0 +1,14 @@
+{
+  "domain": "govee_lan",
+  "name": "Govee LAN",
+  "codeowners": [],
+  "config_flow": true,
+  "dependencies": ["network"],
+  "documentation": "https://github.com/OWNER/govee-lan-ha",
+  "integration_type": "hub",
+  "iot_class": "local_polling",
+  "issue_tracker": "https://github.com/OWNER/govee-lan-ha/issues",
+  "requirements": [],
+  "single_config_entry": true,
+  "version": "1.0.0"
+}

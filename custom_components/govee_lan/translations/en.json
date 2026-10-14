@@ -1,0 +1,35 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Govee LAN",
+        "description": "This will scan your local network for Govee lights.\n\nBefore continuing, enable **LAN Control** for each device in the Govee Home app (device settings).\n\nIf multicast is blocked (VLANs, guest Wi-Fi…), enter your devices' IP addresses below.",
+        "data": {
+          "manual_ips": "Manual IP addresses (optional, comma-separated)"
+        }
+      }
+    },
+    "error": {
+      "no_devices_found": "No Govee device found. Make sure \"LAN Control\" is enabled in the Govee Home app and the device is powered on, on the same network.",
+      "invalid_ip": "Invalid IPv4 address.",
+      "port_in_use": "UDP port 4002 is already in use by another program (another Govee integration, govee2mqtt…)."
+    },
+    "abort": {
+      "single_instance_allowed": "Govee LAN is already configured."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Govee LAN options",
+        "data": {
+          "manual_ips": "Manual IP addresses (comma-separated)",
+          "scan_interval": "Refresh interval (seconds)"
+        }
+      }
+    },
+    "error": {
+      "invalid_ip": "Invalid IPv4 address."
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Govee LAN",
+        "description": "L'intégration va scanner votre réseau local à la recherche de lumières Govee.\n\nAvant de continuer, activez **Contrôle LAN** pour chaque appareil dans l'application Govee Home (Paramètres de l'appareil).\n\nSi le multicast est bloqué (VLAN, Wi-Fi invités…), indiquez ici les adresses IP de vos appareils.",
+        "data": {
+          "manual_ips": "Adresses IP manuelles (optionnel, séparées par des virgules)"
+        }
+      }
+    },
+    "error": {
+      "no_devices_found": "Aucun appareil Govee trouvé. Vérifiez que « Contrôle LAN » est activé dans l'application Govee Home et que l'appareil est allumé sur le même réseau.",
+      "invalid_ip": "Adresse IPv4 invalide.",
+      "port_in_use": "Le port UDP 4002 est déjà utilisé par un autre logiciel (autre intégration Govee, govee2mqtt…)."
+    },
+    "abort": {
+      "single_instance_allowed": "Govee LAN est déjà configuré."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Options Govee LAN",
+        "data": {
+          "manual_ips": "Adresses IP manuelles (séparées par des virgules)",
+          "scan_interval": "Intervalle d'actualisation (secondes)"
+        }
+      }
+    },
+    "error": {
+      "invalid_ip": "Adresse IPv4 invalide."
+    }
+  }
+}
